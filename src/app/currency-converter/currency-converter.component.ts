@@ -11,8 +11,8 @@ export class CurrencyConverterComponent implements OnInit {
   amount2: number = 0;
   currency1: string = 'UAH';
   currency2: string = 'USD';
-  usdUahRate: number = 0; // Add this line
-  eurUahRate: number = 0; // Add this line
+  usdUahRate: number = 0; 
+  eurUahRate: number = 0; 
   usdEurRate: number = 0;
   eurUsdRate: number = 0;
 

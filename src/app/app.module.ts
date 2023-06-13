@@ -15,7 +15,7 @@ import { CurrencyConverterComponent } from './currency-converter/currency-conver
   imports: [
     BrowserModule,
     FormsModule,
-    HttpClientModule // Add HttpClientModule here
+    HttpClientModule 
   ],
   providers: [],
   bootstrap: [AppComponent]
