@@ -23,6 +23,11 @@ export class ExchangeRateService {
     return this.http.get<any>(url);
   }
 
+  getEurUsdRates(): Observable<any> {
+    const url = 'https://api.exchangerate-api.com/v4/latest/EUR';
+    return this.http.get<any>(url);
+  }
+
   getEurUahRates(): Observable<any> {
     const url = 'https://api.exchangerate-api.com/v4/latest/EUR';
     return this.http.get<any>(url);

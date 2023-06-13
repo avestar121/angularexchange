@@ -1,0 +1,27 @@
+<div class="converterContainer">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap');
+    </style>
+    <h2 class="converterTitle">Converter</h2>
+    <div class="converter">
+        <div>
+            <label for="input1">FROM:</label>
+            <input type="number" id="input1" [(ngModel)]="amount1" (input)="convertCurrency()">
+            <select [(ngModel)]="currency1" (ngModelChange)="convertCurrency()">
+              <option value="UAH">🇺🇦UAH</option>
+              <option value="USD">🇺🇸USD</option>
+              <option value="EUR">🇪🇺EUR</option>
+            </select>
+          </div>
+          <div>
+            <label for="input2">TO:</label>
+            <input type="number" id="input2" [(ngModel)]="amount2" (input)="convertCurrencyBack()">
+            <select [(ngModel)]="currency2" (ngModelChange)="convertCurrencyBack()">
+              <option value="UAH">🇺🇦UAH</option>
+              <option value="USD">🇺🇸USD</option>
+              <option value="EUR">🇪🇺EUR</option>
+            </select>
+          </div>
+    </div>
+  </div>
+  
